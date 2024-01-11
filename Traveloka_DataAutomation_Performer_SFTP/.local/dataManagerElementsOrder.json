@@ -1,0 +1,106 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Custom_Workflow/FTP_Workflow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "username&Sequence_2",
+        "password&Sequence_2",
+        "localFileExists&Sequence_2",
+        "remotePathExists&Sequence_2",
+        "ftpSuccess&Sequence_2",
+        "filesInDirectory&Sequence_3",
+        "currentItemIdx&Sequence_3",
+        "fileNotFound&Sequence_3",
+        "listOfFiles&Sequence_3",
+        "localFolderExists&Sequence_4",
+        "rawFolderExists&Sequence_15"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_int_portNumber",
+        "in_str_hostName",
+        "in_str_localFolderPath",
+        "in_str_remotePath",
+        "in_str_bpName",
+        "in_str_fileExtension",
+        "in_dt_dateTime",
+        "in_str_PID",
+        "in_str_credentialName",
+        "out_str_rawLocalFolderPath",
+        "out_bool_ftpSuccess",
+        "out_str_localResultPath",
+        "in_str_BPID",
+        "in_bool_rerunStatus"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "localPath&Sequence_3",
+        "remotePath&Sequence_3",
+        "finalRemotePath&Sequence_3",
+        "dateTime&Sequence_3",
+        "rawLocalPath&Sequence_3",
+        "ftpSuccess&Sequence_3",
+        "localResultPath&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
