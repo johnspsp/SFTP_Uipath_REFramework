@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234,2693</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,2628</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Add_Queue_Retry_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -95,7 +95,7 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Add_Queue_Retry" sap:VirtualizedContainerService.HintSize="704,2628" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Add_Queue_Retry" sap:VirtualizedContainerService.HintSize="704,2563" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strQueueReference" />
       <Variable x:TypeArguments="x:Int32" Name="intAutoRetryMax" />
@@ -141,9 +141,9 @@
         <InArgument x:TypeArguments="x:String">[in_TransactionItem.SpecificContent("Key").ToString]</InArgument>
       </Assign.Value>
     </Assign>
-    <If Condition="[Not excludedBps.Contains(bpKey)]" DisplayName="If - Current BP key is not listed in excludedBps" sap:VirtualizedContainerService.HintSize="642,2138" sap2010:WorkflowViewState.IdRef="If_3">
+    <If Condition="[Not excludedBps.Contains(bpKey)]" DisplayName="If - Current BP key is not listed in excludedBps" sap:VirtualizedContainerService.HintSize="642,2073" sap2010:WorkflowViewState.IdRef="If_3">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="608,1728" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="608,1663" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -220,7 +220,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InvokeCode>
-          <If Condition="[isCreate]" sap:VirtualizedContainerService.HintSize="546,1247" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[isCreate]" sap:VirtualizedContainerService.HintSize="546,1182" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -228,7 +228,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,1057" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,912" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="scg:List(s:DateTime)" Name="listStartEndRange" />
                 </Sequence.Variables>
@@ -237,7 +237,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <If Condition="[isPostponeNextDay]" sap:VirtualizedContainerService.HintSize="450,972" sap2010:WorkflowViewState.IdRef="If_2">
+                <If Condition="[isPostponeNextDay]" sap:VirtualizedContainerService.HintSize="450,827" sap2010:WorkflowViewState.IdRef="If_2">
                   <If.Then>
                     <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,333" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <sap:WorkflowViewStateService.ViewState>
@@ -278,20 +278,12 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,478" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,333" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Get_EmailDate_Asset.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Custom_Workflow\Get_EmailDate_Asset.xaml">
-                        <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_strAssetName">[in_Config("GlobalVarAsset").ToString]</InArgument>
-                          <OutArgument x:TypeArguments="s:DateTime" x:Key="out_dateStartPeriod">[dateStartPeriod]</OutArgument>
-                          <OutArgument x:TypeArguments="s:DateTime" x:Key="out_dateEndPeriod">[dateEndPeriod]</OutArgument>
-                          <OutArgument x:TypeArguments="scg:List(s:DateTime)" x:Key="out_listStartEndRange">[listStartEndRange]</OutArgument>
-                        </ui:InvokeWorkflowFile.Arguments>
-                      </ui:InvokeWorkflowFile>
                       <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="" DeferDate="[Now.AddHours(intAutoRetryPostpone)]" DisplayName="Add Queue Item For Current BP" sap:VirtualizedContainerService.HintSize="354,248" sap2010:WorkflowViewState.IdRef="AddQueueItem_3" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]" Reference="[strQueueReference]">
                         <ui:AddQueueItem.ItemInformation>
                           <InArgument x:TypeArguments="x:String" x:Key="BPID">[in_TransactionItem.SpecificContent("BPID").ToString]</InArgument>
@@ -304,7 +296,7 @@
                           <InArgument x:TypeArguments="x:String" x:Key="Sender Domain Rerun">[in_TransactionItem.SpecificContent("Sender Domain Rerun").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="File Name Attachment">[in_TransactionItem.SpecificContent("File Name Attachment").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="File Type">[in_TransactionItem.SpecificContent("File Type").ToString]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Period">[dateEndPeriod.ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Period">[in_TransactionItem.SpecificContent("Rerun Date").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="PathMasterFolder">[in_TransactionItem.SpecificContent("PathMasterFolder").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="PathLog">[in_TransactionItem.SpecificContent("PathLog").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:Boolean" x:Key="Rerun">[CBool("True")]</InArgument>
@@ -328,7 +320,13 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap2010:WorkflowViewState.IdRef="Sequence_4" />
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
             </If.Else>
           </If>
           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;Retried: {0}, Max: {1}&quot;, intRetried, intAutoRetryMax)]" />
