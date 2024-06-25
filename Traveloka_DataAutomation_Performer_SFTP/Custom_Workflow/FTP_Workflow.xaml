@@ -13,13 +13,13 @@
     <x:Property Name="out_bool_ftpSuccess" Type="OutArgument(x:Boolean)" />
     <x:Property Name="out_str_localResultPath" Type="OutArgument(x:String)" />
     <x:Property Name="in_str_BPID" Type="InArgument(x:String)" />
-    <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
     <x:Property Name="in_bool_rerunStatus" Type="InArgument(x:Boolean)" />
+    <x:Property Name="in_keyFileName" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1311.2,8081.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1233,7523</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>FTP_Workflow_final_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -55,6 +55,7 @@
       <x:String>UiPath.FTP.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -131,7 +132,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="The following workflow main takeaways:&#xA;1. Check if final renamed file already exist &#xA;2. Connect to FTP session&#xA;3. Check if remote directory exists, if not throw error&#xA;4. Check if local directory for raw files already exists? if not create the folder&#xA;5. Check if local directory for renamed files exists? if not create&#xA;6. Copy the file from raw folder to final folder" DisplayName="FTP_Workflow_final" sap:VirtualizedContainerService.HintSize="1321.6,7976.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="The following workflow main takeaways:&#xA;1. Check if final renamed file already exist &#xA;2. Connect to FTP session&#xA;3. Check if remote directory exists, if not throw error&#xA;4. Check if local directory for raw files already exists? if not create the folder&#xA;5. Check if local directory for renamed files exists? if not create&#xA;6. Copy the file from raw folder to final folder" DisplayName="FTP_Workflow_final" sap:VirtualizedContainerService.HintSize="1145,7458" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -139,7 +140,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="FTP Workflow" sap:VirtualizedContainerService.HintSize="1259.2,7740.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="FTP Workflow" sap:VirtualizedContainerService.HintSize="1083,7253" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="username" />
         <Variable x:TypeArguments="ss:SecureString" Name="password" />
@@ -153,8 +154,8 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message - Starting The FTP Process" sap:VirtualizedContainerService.HintSize="1196.8,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[in_str_PID + &quot; - &quot; + &quot;FTP Workflow start&quot;]" />
-      <ui:FileExistsX sap2010:Annotation.AnnotationText="To skip the whole process if the files is already processed" DisplayName="File Exists - Check if the file already processed before" Exists="[localFileExists]" sap:VirtualizedContainerService.HintSize="1196.8,178.4" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[Path.Combine(in_str_localFolderPath, in_dt_dateTime.Year.ToString, in_dt_dateTime.ToString(&quot;yyyy-MM-dd&quot;), $&quot;Traveloka_{in_str_BPID}_{in_dt_dateTime.ToString(&quot;ddMMMyy&quot;)}.{in_str_fileExtension}&quot;)]">
+      <ui:LogMessage DisplayName="Log Message - Starting The FTP Process" sap:VirtualizedContainerService.HintSize="1021,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[in_str_PID + &quot; - &quot; + &quot;FTP Workflow start&quot;]" />
+      <ui:FileExistsX sap2010:Annotation.AnnotationText="To skip the whole process if the files is already processed" DisplayName="File Exists - Check if the file already processed before" Exists="[localFileExists]" sap:VirtualizedContainerService.HintSize="1021,207" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[Path.Combine(in_str_localFolderPath, in_dt_dateTime.Year.ToString, in_dt_dateTime.ToString(&quot;yyyy-MM-dd&quot;), $&quot;Traveloka_{in_str_BPID}_{in_dt_dateTime.ToString(&quot;ddMMMyy&quot;)}.{in_str_fileExtension}&quot;)]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -163,7 +164,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:FileExistsX>
-      <If sap2010:Annotation.AnnotationText="Check if rerun status true or not, if its true, even if the file already exists, it will run the whole process again (the purpose of the rerun)" Condition="[in_bool_rerunStatus = True]" DisplayName="If - Check if the rerun status True or False in config" sap:VirtualizedContainerService.HintSize="1196.8,499.2" sap2010:WorkflowViewState.IdRef="If_5">
+      <If sap2010:Annotation.AnnotationText="Check if rerun status true or not, if its true, even if the file already exists, it will run the whole process again (the purpose of the rerun)" Condition="[in_bool_rerunStatus = True]" DisplayName="If - Check if the rerun status True or False in config" sap:VirtualizedContainerService.HintSize="1021,508" sap2010:WorkflowViewState.IdRef="If_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -171,13 +172,13 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="400,172" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="337.6,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Boolean">[localFileExists]</OutArgument>
               </Assign.To>
@@ -188,7 +189,7 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence sap:VirtualizedContainerService.HintSize="400,104.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_14">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -197,50 +198,50 @@
           </Sequence>
         </If.Else>
       </If>
-      <If sap2010:Annotation.AnnotationText="Proceed to the whole FTP process" Condition="[localFileExists = False]" DisplayName="If - Local file is not exists" sap:VirtualizedContainerService.HintSize="1196.8,6688.8" sap2010:WorkflowViewState.IdRef="If_1">
+      <If sap2010:Annotation.AnnotationText="Proceed to the whole FTP process" Condition="[localFileExists = False]" DisplayName="If - Local file is not exists" sap:VirtualizedContainerService.HintSize="1021,6254" sap2010:WorkflowViewState.IdRef="If_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="1119.2,6224.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="987,5810" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message - Proceed to FTP Session" sap:VirtualizedContainerService.HintSize="1056.8,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[in_str_PID + &quot; - &quot; + &quot;Local file not exists - proceed to FTP connect&quot;]" />
-            <ui:GetRobotCredential TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Ger credential for the FTP connection from orchestrator asset" AssetName="[in_str_credentialName]" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1056.8,216.8" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[password]" Username="[username]">
+            <ui:LogMessage DisplayName="Log Message - Proceed to FTP Session" sap:VirtualizedContainerService.HintSize="925,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[in_str_PID + &quot; - &quot; + &quot;Local file not exists - proceed to FTP connect&quot;]" />
+            <ui:GetRobotCredential TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Ger credential for the FTP connection from orchestrator asset" AssetName="[in_str_credentialName]" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="925,217" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[password]" Username="[username]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetRobotCredential>
-            <p:WithFtpSession ClientCertificatePassword="{x:Null}" ClientCertificatePath="{x:Null}" ContinueOnError="False" DisplayName="Start FTP Session" FtpsMode="Explicit" sap:VirtualizedContainerService.HintSize="1056.8,5673.6" Host="[in_str_hostName]" sap2010:WorkflowViewState.IdRef="WithFtpSession_1" Password="[new System.Net.NetworkCredential(string.Empty, password).Password]" Port="[in_int_portNumber]" Username="[username]">
+            <p:WithFtpSession ClientCertificatePassword="{x:Null}" ClientCertificatePath="{x:Null}" ContinueOnError="False" DisplayName="Start FTP Session" FtpsMode="Explicit" sap:VirtualizedContainerService.HintSize="925,5332" Host="[in_str_hostName]" sap2010:WorkflowViewState.IdRef="WithFtpSession_1" Password="[new System.Net.NetworkCredential(string.Empty, password).Password]" Port="[in_int_portNumber]" Username="[username]">
               <p:WithFtpSession.Body>
                 <ActivityAction x:TypeArguments="p:IFtpSession">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="p:IFtpSession" Name="FtpSession" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1023.2,5587.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="891,5222" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message - Start FTP Session" sap:VirtualizedContainerService.HintSize="960.8,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[in_str_PID + &quot; - &quot; + &quot;Start FTP Session&quot;]" />
-                    <p:DirectoryExists sap2010:Annotation.AnnotationText="Check if the dir in FTP exists" ContinueOnError="False" DisplayName="Directory Exists in Remote Path" Exists="[remotePathExists]" sap:VirtualizedContainerService.HintSize="960.8,121.6" sap2010:WorkflowViewState.IdRef="DirectoryExists_1" RemotePath="[in_str_remotePath]">
+                    <ui:LogMessage DisplayName="Log Message - Start FTP Session" sap:VirtualizedContainerService.HintSize="829,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[in_str_PID + &quot; - &quot; + &quot;Start FTP Session&quot;]" />
+                    <p:DirectoryExists sap2010:Annotation.AnnotationText="Check if the dir in FTP exists" ContinueOnError="False" DisplayName="Directory Exists in Remote Path" Exists="[remotePathExists]" sap:VirtualizedContainerService.HintSize="829,153" sap2010:WorkflowViewState.IdRef="DirectoryExists_1" RemotePath="[in_str_remotePath]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </p:DirectoryExists>
-                    <If Condition="[remotePathExists]" DisplayName="If - Remote Path Exists" sap:VirtualizedContainerService.HintSize="960.8,5131.2" sap2010:WorkflowViewState.IdRef="If_4">
+                    <If Condition="[remotePathExists]" DisplayName="If - Remote Path Exists" sap:VirtualizedContainerService.HintSize="829,4808" sap2010:WorkflowViewState.IdRef="If_4">
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="883.2,4568" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="795,4273" sap2010:WorkflowViewState.IdRef="Sequence_3">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="scg:IEnumerable(p:FtpObjectInfo)" Name="filesInDirectory" />
                             <Variable x:TypeArguments="x:Int32" Name="currentItemIdx" />
@@ -252,8 +253,8 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <p:EnumerateObjects ContinueOnError="False" DisplayName="Loop through the files in FTP remote path" Files="[filesInDirectory]" sap:VirtualizedContainerService.HintSize="820.8,90.4" sap2010:WorkflowViewState.IdRef="EnumerateObjects_1" Recursive="False" RemotePath="[in_str_remotePath]" />
-                          <Assign sap2010:Annotation.AnnotationText="Assign enumerable result from FTP to list, order by modified date descending order" DisplayName="Assign enumerable to list" sap:VirtualizedContainerService.HintSize="820.8,104" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <p:EnumerateObjects ContinueOnError="False" DisplayName="Loop through the files in FTP remote path" Files="[filesInDirectory]" sap:VirtualizedContainerService.HintSize="733,122" sap2010:WorkflowViewState.IdRef="EnumerateObjects_1" Recursive="False" RemotePath="[in_str_remotePath]" />
+                          <Assign sap2010:Annotation.AnnotationText="Assign enumerable result from FTP to list, order by modified date descending order" DisplayName="Assign enumerable to list" sap:VirtualizedContainerService.HintSize="733,156" sap2010:WorkflowViewState.IdRef="Assign_6">
                             <Assign.To>
                               <OutArgument x:TypeArguments="scg:List(p:FtpObjectInfo)">[listOfFiles]</OutArgument>
                             </Assign.To>
@@ -266,26 +267,26 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <ui:ForEach x:TypeArguments="p:FtpObjectInfo" Condition="[fileNotFound]" CurrentIndex="[currentItemIdx]" DisplayName="Loop over every files found in remote path" sap:VirtualizedContainerService.HintSize="820.8,4181.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[listOfFiles]">
+                          <ui:ForEach x:TypeArguments="p:FtpObjectInfo" Condition="[fileNotFound]" CurrentIndex="[currentItemIdx]" DisplayName="Loop over every files found in remote path" sap:VirtualizedContainerService.HintSize="733,3907" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[listOfFiles]">
                             <ui:ForEach.Body>
                               <ActivityAction x:TypeArguments="p:FtpObjectInfo">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="p:FtpObjectInfo" Name="currentItem" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="743.2,4017.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="699,3720" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <If sap2010:Annotation.AnnotationText="Check if the file has period date in its name&#xA;" Condition="[currentItem.Name.Contains(in_dt_dateTime.ToString(&quot;yyyyMMdd&quot;))]" sap:VirtualizedContainerService.HintSize="680.8,3905.6" sap2010:WorkflowViewState.IdRef="If_3">
+                                  <If sap2010:Annotation.AnnotationText="Check if the file has period date in its name&#xA;" Condition="[currentItem.Name.Contains(in_dt_dateTime.ToString(&quot;yyyyMMdd&quot;)) AndAlso currentItem.Name.Contains(in_keyFileName)]" sap:VirtualizedContainerService.HintSize="637,3632" sap2010:WorkflowViewState.IdRef="If_3">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <If.Then>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="603.2,3085.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="603,2876" sap2010:WorkflowViewState.IdRef="Sequence_4">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:Boolean" Name="localFolderExists" />
                                         </Sequence.Variables>
@@ -294,7 +295,7 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="Download File" sap:VirtualizedContainerService.HintSize="540.8,1199.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                        <Sequence DisplayName="Download File" sap:VirtualizedContainerService.HintSize="541,1156" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="x:Boolean" Name="rawFolderExists" />
                                           </Sequence.Variables>
@@ -303,31 +304,31 @@
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:FolderExistsX sap2010:Annotation.AnnotationText="Check if local folder for raw files already exists or not, if not create the folder " DisplayName="Folder Exists - Raw Local Folder Dir" Exists="[rawFolderExists]" sap:VirtualizedContainerService.HintSize="477.6,178.4" sap2010:WorkflowViewState.IdRef="FolderExistsX_3" Path="[Path.Combine(in_str_localFolderPath, &quot;Raw Files&quot;)]">
+                                          <ui:FolderExistsX sap2010:Annotation.AnnotationText="Check if local folder for raw files already exists or not, if not create the folder " DisplayName="Folder Exists - Raw Local Folder Dir" Exists="[rawFolderExists]" sap:VirtualizedContainerService.HintSize="450,207" sap2010:WorkflowViewState.IdRef="FolderExistsX_3" Path="[Path.Combine(in_str_localFolderPath, &quot;Raw Files&quot;)]">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </ui:FolderExistsX>
-                                          <If sap2010:Annotation.AnnotationText="Create folder for raw files " Condition="[rawFolderExists = False]" sap:VirtualizedContainerService.HintSize="477.6,507.2" sap2010:WorkflowViewState.IdRef="If_7">
+                                          <If sap2010:Annotation.AnnotationText="Create folder for raw files " Condition="[rawFolderExists = False]" sap:VirtualizedContainerService.HintSize="450,495" sap2010:WorkflowViewState.IdRef="If_7">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <If.Then>
-                                              <Sequence sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,191" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="337.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[Path.Combine(in_str_localFolderPath, &quot;Raw Files&quot;)]" />
+                                                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="354,103" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[Path.Combine(in_str_localFolderPath, &quot;Raw Files&quot;)]" />
                                               </Sequence>
                                             </If.Then>
                                             <If.Else>
-                                              <Sequence sap:VirtualizedContainerService.HintSize="400,104.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -336,40 +337,40 @@
                                               </Sequence>
                                             </If.Else>
                                           </If>
-                                          <p:DownloadFiles ContinueOnError="False" Create="False" DisplayName="Download Files From FTP Session" sap:VirtualizedContainerService.HintSize="477.6,139.2" sap2010:WorkflowViewState.IdRef="DownloadFiles_2" LocalPath="[Path.Combine(in_str_localFolderPath, &quot;Raw Files&quot;)]" Overwrite="True" Recursive="False" RemotePath="[currentItem.FullName]" />
-                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="477.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[in_str_PID + &quot; - &quot; + &quot;Download files done&quot;]" />
+                                          <p:DownloadFiles ContinueOnError="False" Create="False" DisplayName="Download Files From FTP Session" sap:VirtualizedContainerService.HintSize="450,170" sap2010:WorkflowViewState.IdRef="DownloadFiles_2" LocalPath="[Path.Combine(in_str_localFolderPath, &quot;Raw Files&quot;)]" Overwrite="True" Recursive="False" RemotePath="[currentItem.FullName]" />
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,164" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[in_str_PID + &quot; - &quot; + &quot;Download files done&quot;]" />
                                         </Sequence>
-                                        <Sequence DisplayName="Copy + Rename Downloaded File" sap:VirtualizedContainerService.HintSize="540.8,1734.4" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                        <Sequence DisplayName="Copy + Rename Downloaded File" sap:VirtualizedContainerService.HintSize="541,1632" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:FolderExistsX sap2010:Annotation.AnnotationText="Check if local folder for final result exists or not, if not create the folder first&#xA;" DisplayName="Folder Exists - Final Local Result Dir" Exists="[localFolderExists]" sap:VirtualizedContainerService.HintSize="478.4,194.4" sap2010:WorkflowViewState.IdRef="FolderExistsX_4" Path="[Path.Combine(in_str_localFolderPath, in_dt_dateTime.Year.ToString, in_dt_dateTime.ToString(&quot;yyyy-MM-dd&quot;))]">
+                                          <ui:FolderExistsX sap2010:Annotation.AnnotationText="Check if local folder for final result exists or not, if not create the folder first&#xA;" DisplayName="Folder Exists - Final Local Result Dir" Exists="[localFolderExists]" sap:VirtualizedContainerService.HintSize="479,222" sap2010:WorkflowViewState.IdRef="FolderExistsX_4" Path="[Path.Combine(in_str_localFolderPath, in_dt_dateTime.Year.ToString, in_dt_dateTime.ToString(&quot;yyyy-MM-dd&quot;))]">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </ui:FolderExistsX>
-                                          <If sap2010:Annotation.AnnotationText="Create the folder for final renamed file" Condition="[localFolderExists = False]" sap:VirtualizedContainerService.HintSize="478.4,507.2" sap2010:WorkflowViewState.IdRef="If_8">
+                                          <If sap2010:Annotation.AnnotationText="Create the folder for final renamed file" Condition="[localFolderExists = False]" sap:VirtualizedContainerService.HintSize="479,495" sap2010:WorkflowViewState.IdRef="If_8">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <If.Then>
-                                              <Sequence sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                              <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="416,191" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="337.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[Path.Combine(in_str_localFolderPath, in_dt_dateTime.Year.ToString, in_dt_dateTime.ToString(&quot;yyyy-MM-dd&quot;))]" />
+                                                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="354,103" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[Path.Combine(in_str_localFolderPath, in_dt_dateTime.Year.ToString, in_dt_dateTime.ToString(&quot;yyyy-MM-dd&quot;))]" />
                                               </Sequence>
                                             </If.Then>
                                             <If.Else>
-                                              <Sequence sap:VirtualizedContainerService.HintSize="400,104.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                              <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -378,14 +379,14 @@
                                               </Sequence>
                                             </If.Else>
                                           </If>
-                                          <ui:CopyFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Copy the file from raw folder to final dir&#xA;" Destination="[Path.Combine(in_str_localFolderPath, in_dt_dateTime.Year.ToString, in_dt_dateTime.ToString(&quot;yyyy-MM-dd&quot;), $&quot;Traveloka_{in_str_BPID}_{in_dt_dateTime.ToString(&quot;ddMMMyy&quot;)}.{in_str_fileExtension}&quot;)]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="478.4,199.2" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[Path.Combine(in_str_localFolderPath, &quot;Raw Files&quot;, currentItem.Name)]">
+                                          <ui:CopyFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Copy the file from raw folder to final dir&#xA;" Destination="[Path.Combine(in_str_localFolderPath, in_dt_dateTime.Year.ToString, in_dt_dateTime.ToString(&quot;yyyy-MM-dd&quot;), $&quot;Traveloka_{in_str_BPID}_{in_dt_dateTime.ToString(&quot;ddMMMyy&quot;)}.{in_str_fileExtension}&quot;)]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="479,228" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[Path.Combine(in_str_localFolderPath, &quot;Raw Files&quot;, currentItem.Name)]">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </ui:CopyFile>
-                                          <Assign sap:VirtualizedContainerService.HintSize="478.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                          <Assign sap:VirtualizedContainerService.HintSize="479,114" sap2010:WorkflowViewState.IdRef="Assign_5">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:Boolean">[ftpSuccess]</OutArgument>
                                             </Assign.To>
@@ -393,7 +394,7 @@
                                               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,210.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,241" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                                             <ui:MultipleAssign.AssignOperations>
                                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -431,37 +432,31 @@
                                               </scg:List>
                                             </ui:MultipleAssign.AssignOperations>
                                           </ui:MultipleAssign>
-                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[in_str_PID + &quot; - &quot; + &quot;Copy file done&quot;]" />
-                                          <ui:Break sap2010:Annotation.AnnotationText="break after found 1 file with the most recent time modified in the same date" DisplayName="Break from loop" sap:VirtualizedContainerService.HintSize="478.4,68.8" sap2010:WorkflowViewState.IdRef="Break_1">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                          </ui:Break>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[in_str_PID + &quot; - &quot; + &quot;Copy file done&quot;]" />
+                                          <ui:Break DisplayName="Break from ftp files loop" sap:VirtualizedContainerService.HintSize="479,48" sap2010:WorkflowViewState.IdRef="Break_3" />
                                         </Sequence>
                                       </Sequence>
                                     </If.Then>
                                     <If.Else>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="540,597.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512,553" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <If Condition="[currentItemIdx = filesInDirectory.Count - 1 AND fileNotFound = True]" sap:VirtualizedContainerService.HintSize="477.6,485.6" sap2010:WorkflowViewState.IdRef="If_9">
+                                        <If Condition="[currentItemIdx = filesInDirectory.Count - 1 AND fileNotFound = True]" sap:VirtualizedContainerService.HintSize="450,465" sap2010:WorkflowViewState.IdRef="If_9">
                                           <If.Then>
-                                            <Sequence sap:VirtualizedContainerService.HintSize="400,202.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                            <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="416,201" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Throw Exception="[New BusinessRuleException(&quot;File Not Found: The requested file could not be located in the remote FTP directory. Please verify the file name and path to ensure they are correct.&quot;)]" sap:VirtualizedContainerService.HintSize="337.6,90.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                                              <Throw Exception="[New BusinessRuleException(&quot;File Not Found: The requested file could not be located in the remote FTP directory. Please verify the file name and path to ensure they are correct.&quot;)]" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
                                             </Sequence>
                                           </If.Then>
                                           <If.Else>
-                                            <Sequence sap:VirtualizedContainerService.HintSize="400,104.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                            <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -485,14 +480,14 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="400,384.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="Sequence_9">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="337.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[in_str_PID + &quot; - &quot; + &quot;Remote Path Not Found&quot;]" />
-                          <Throw Exception="[New BusinessRuleException(&quot;Remote Path Not Found: The requested path could not be located in the remote FTP directory. Please verify the file path to ensure they are correct.&quot;)]" sap:VirtualizedContainerService.HintSize="337.6,90.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[in_str_PID + &quot; - &quot; + &quot;Remote Path Not Found&quot;]" />
+                          <Throw Exception="[New BusinessRuleException(&quot;Remote Path Not Found: The requested path could not be located in the remote FTP directory. Please verify the file path to ensure they are correct.&quot;)]" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_2" />
                         </Sequence>
                       </If.Else>
                     </If>
@@ -503,13 +498,13 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence sap:VirtualizedContainerService.HintSize="400,254.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="337.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[in_str_PID + &quot; - &quot; + &quot;Local final file already exists, abort process&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[in_str_PID + &quot; - &quot; + &quot;Local final file already exists, abort process&quot;]" />
           </Sequence>
         </If.Else>
       </If>

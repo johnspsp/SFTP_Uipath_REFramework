@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1239.2,1940.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1233,2338</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -44,6 +44,8 @@
       <x:String>UiPath.UIAutomationNext.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -105,17 +107,24 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="611.2,1876" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="683,2273" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="548.8,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="548.8,1505.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="621,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="621,1940" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Default="[in_TransactionItem.SpecificContent(&quot;PathMasterFolder&quot;).ToString]" Name="localPath" />
         <Variable x:TypeArguments="x:String" Name="remotePath" />
@@ -124,55 +133,88 @@
         <Variable x:TypeArguments="x:String" Name="rawLocalPath" />
         <Variable x:TypeArguments="x:Boolean" Name="ftpSuccess" />
         <Variable x:TypeArguments="x:String" Name="localResultPath" />
+        <Variable x:TypeArguments="x:String" Name="keyFileName" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="486.4,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
-        <ui:MultipleAssign.AssignOperations>
-          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-              <ui:AssignOperation.To>
-                <OutArgument x:TypeArguments="x:String">[remotePath]</OutArgument>
-              </ui:AssignOperation.To>
-              <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">[in_TransactionItem.SpecificContent("Remote Path").ToString]</InArgument>
-              </ui:AssignOperation.Value>
-            </ui:AssignOperation>
-            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
-              <ui:AssignOperation.To>
-                <OutArgument x:TypeArguments="s:DateTime">[dateTime]</OutArgument>
-              </ui:AssignOperation.To>
-              <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="s:DateTime">[CDate(in_TransactionItem.SpecificContent("Period").ToString).ToLocalTime]</InArgument>
-              </ui:AssignOperation.Value>
-            </ui:AssignOperation>
-          </scg:List>
-        </ui:MultipleAssign.AssignOperations>
-      </ui:MultipleAssign>
-      <Assign sap:VirtualizedContainerService.HintSize="486.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
-        <Assign.To>
-          <OutArgument x:TypeArguments="x:String">[localPath]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[Path.Combine(localPath, in_TransactionItem.SpecificContent("Key").ToString)]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="to replace format on remote path such as {yyyyMM}/{yyyy}&#xA;*need System.Text.RegularExpressions namespace " Code="string pattern = &quot;{(.*?)}&quot;;&#xA;Regex regex = new Regex(pattern);&#xA;string outputString = regex.Replace(remotePath, match =&gt;&#xA;{&#xA;    string format = match.Groups[1].Value;&#xA;    return dateTime.ToString(format);&#xA;});&#xA;finalRemotePath = outputString;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="486.4,224.8" sap2010:WorkflowViewState.IdRef="InvokeCode_2" Language="CSharp">
-        <ui:InvokeCode.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="remotePath">[remotePath]</InArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="finalRemotePath">[finalRemotePath]</OutArgument>
-          <InArgument x:TypeArguments="s:DateTime" x:Key="dateTime">[dateTime]</InArgument>
-        </ui:InvokeCode.Arguments>
+      <Sequence DisplayName="Format the path and key filename" sap:VirtualizedContainerService.HintSize="559,606" sap2010:WorkflowViewState.IdRef="Sequence_6">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-      </ui:InvokeCode>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FTP_Workflow.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="486.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Custom_Workflow\FTP_Workflow.xaml">
+        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,241" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+          <ui:MultipleAssign.AssignOperations>
+            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[remotePath]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[in_TransactionItem.SpecificContent("Remote Path").ToString.Split(":"c)(0)]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="s:DateTime">[dateTime]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="s:DateTime">[CDate(in_TransactionItem.SpecificContent("Period").ToString)]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[localPath]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[Path.Combine(localPath, in_TransactionItem.SpecificContent("Key").ToString)]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[keyFileName]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String">[if(in_TransactionItem.SpecificContent("Remote Path").ToString.Contains(":"), in_TransactionItem.SpecificContent("Remote Path").ToString.Split(":"c)(1), "")]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+            </scg:List>
+          </ui:MultipleAssign.AssignOperations>
+        </ui:MultipleAssign>
+        <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="to replace format on remote path such as {yyyyMM}/{yyyy}&#xA;*need System.Text.RegularExpressions namespace " Code="string pattern = &quot;{(.*?)}&quot;;&#xA;Regex regex = new Regex(pattern);&#xA;string outputString = regex.Replace(remotePath, match =&gt;&#xA;{&#xA;    string format = match.Groups[1].Value;&#xA;    return dateTime.ToString(format);&#xA;});&#xA;finalRemotePath = outputString;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="479,245" sap2010:WorkflowViewState.IdRef="InvokeCode_2" Language="CSharp">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="x:String" x:Key="remotePath">[remotePath]</InArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="finalRemotePath">[finalRemotePath]</OutArgument>
+            <InArgument x:TypeArguments="s:DateTime" x:Key="dateTime">[dateTime]</InArgument>
+          </ui:InvokeCode.Arguments>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:InvokeCode>
+      </Sequence>
+      <Sequence DisplayName="BP Specific period" sap:VirtualizedContainerService.HintSize="559,411" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_TransactionItem.SpecificContent(&quot;Key&quot;).ToString]" sap:VirtualizedContainerService.HintSize="497,291" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+          <Assign x:Key="directdebitbri" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="s:DateTime">[dateTime]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="s:DateTime">[If(CBool(in_TransactionItem.SpecificContent("Rerun")) = False , dateTime.AddDays(-1), dateTime)]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Switch>
+      </Sequence>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FTP_Workflow.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="559,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Custom_Workflow\FTP_Workflow.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:Int32" x:Key="in_int_portNumber">
             <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="Convert.ToInt32(in_TransactionItem.SpecificContent(&quot;Port&quot;).ToString)" />
@@ -213,9 +255,11 @@
           <InArgument x:TypeArguments="x:String" x:Key="in_str_BPID">
             <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_TransactionItem.SpecificContent(&quot;BPID&quot;).ToString" />
           </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="BreakTriggerScopeInArgument" />
           <InArgument x:TypeArguments="x:Boolean" x:Key="in_bool_rerunStatus">
             <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Convert.ToBoolean(in_TransactionItem.SpecificContent(&quot;Rerun&quot;).ToString)" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_keyFileName">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="keyFileName" />
           </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
@@ -225,20 +269,20 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
-      <If sap2010:Annotation.AnnotationText="&#xA;Write email only executed if everything success&#xA;" Condition="[ftpSuccess]" sap:VirtualizedContainerService.HintSize="486.4,687.2" sap2010:WorkflowViewState.IdRef="If_1">
+      <If sap2010:Annotation.AnnotationText="&#xA;Write email only executed if everything success&#xA;" Condition="[ftpSuccess]" sap:VirtualizedContainerService.HintSize="559,667" sap2010:WorkflowViewState.IdRef="If_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="408.45283018867923,348.6792452830189" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,369" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Custom_Workflow\Mail_RawFile.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="367.6981132075471,111.39622641509433" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Custom_Workflow\Mail_RawFile.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Custom_Workflow\Mail_RawFile.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Custom_Workflow\Mail_RawFile.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="s:DateTime" x:Key="in_Period">[dateTime]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_attachment">[rawLocalPath]</InArgument>
@@ -251,7 +295,7 @@
                 <InArgument x:TypeArguments="x:String" x:Key="in_SenderName">[in_Config("Email_SenderName").ToString]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Custom_Workflow\Add_AWS_Queue.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="367.6981132075471,111.39622641509433" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Custom_Workflow\Add_AWS_Queue.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Custom_Workflow\Add_AWS_Queue.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Custom_Workflow\Add_AWS_Queue.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_str_queueName">[in_Config("OrchestratorAWSQueueName").ToString]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_str_BPID">[in_TransactionItem.SpecificContent("BPID").ToString]</InArgument>
@@ -272,7 +316,7 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence sap:VirtualizedContainerService.HintSize="400.3018867924528,79.69811320754717" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="400.3018867924528,79.69811320754717" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
