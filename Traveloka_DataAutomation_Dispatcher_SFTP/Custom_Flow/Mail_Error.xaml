@@ -25,7 +25,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>992.6037735849056,1493.4339622641508</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1233,1285</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="72">
@@ -121,12 +121,9 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Mail Error" sap:VirtualizedContainerService.HintSize="511.6981132075471,1428.2264150943395" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence DisplayName="Mail Error" sap:VirtualizedContainerService.HintSize="430,1220" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="htmlBody" />
-      <Variable x:TypeArguments="x:String" Name="mailUsrname" />
-      <Variable x:TypeArguments="ss:SecureString" Name="mailPwd" />
-      <Variable x:TypeArguments="x:String" Name="mailServer" />
       <Variable x:TypeArguments="ss:SecureString" Name="pwd" />
       <Variable x:TypeArguments="x:String" Name="usrname" />
     </Sequence.Variables>
@@ -136,16 +133,16 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Mail Error" sap:VirtualizedContainerService.HintSize="450.1132075471698,91.47169811320754" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;STEP : Mail Error&quot;]" />
-    <ui:Comment sap:VirtualizedContainerService.HintSize="450.1132075471698,57.056603773584904" sap2010:WorkflowViewState.IdRef="Comment_1" Text="TODO : Setup credential in orchestrator" />
-    <ui:GetRobotCredential AssetName="[in_credMail]" CacheStrategy="None" DisplayName="Get Credential Email" sap:VirtualizedContainerService.HintSize="450.1132075471698,138.56603773584905" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[pwd]" Username="[usrname]">
+    <ui:LogMessage DisplayName="Log Message Mail Error" sap:VirtualizedContainerService.HintSize="368,124" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;STEP : Mail Error&quot;]" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="368,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="TODO : Setup credential in orchestrator" />
+    <ui:GetRobotCredential AssetName="[in_credMail]" CacheStrategy="None" DisplayName="Get Credential Email" sap:VirtualizedContainerService.HintSize="368,173" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[pwd]" Username="[usrname]">
       <ui:GetRobotCredential.TimeoutMS>
         <InArgument x:TypeArguments="x:Int32" />
       </ui:GetRobotCredential.TimeoutMS>
     </ui:GetRobotCredential>
-    <ui:ReadTextFile File="{x:Null}" Content="[htmlBody]" DisplayName="Read Text File Email Template" FileName="[in_strEmailTemplate]" sap:VirtualizedContainerService.HintSize="450.1132075471698,79.69811320754717" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
-    <ui:Comment sap:VirtualizedContainerService.HintSize="450.1132075471698,76.98113207547169" sap2010:WorkflowViewState.IdRef="Comment_2" Text="TODO : Uncomment after get the email &amp; orchestrator asset" />
-    <If sap2010:Annotation.AnnotationText="Send email without image if screenshot failed" Condition="[in_pathSs = &quot;&quot;]" DisplayName="If no screenshot path" sap:VirtualizedContainerService.HintSize="450.1132075471698,503.5471698113207" sap2010:WorkflowViewState.IdRef="If_2">
+    <ui:ReadTextFile File="{x:Null}" Content="[htmlBody]" DisplayName="Read Text File Email Template" FileName="[in_strEmailTemplate]" sap:VirtualizedContainerService.HintSize="368,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="368,107" sap2010:WorkflowViewState.IdRef="Comment_2" Text="TODO : Uncomment after get the email &amp; orchestrator asset" />
+    <If sap2010:Annotation.AnnotationText="Send email without image if screenshot failed" Condition="[in_pathSs = &quot;&quot;]" DisplayName="If no screenshot path" sap:VirtualizedContainerService.HintSize="368,528" sap2010:WorkflowViewState.IdRef="If_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -154,14 +151,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <ui:SendMail Bcc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[htmlBody.Replace(&quot;{0}&quot;, in_strBPName).Replace(&quot;{1}&quot;, DateTime.Now.ToString(&quot;dd-MM-yyyy HH:mm:ss&quot;)).Replace(&quot;{2}&quot;, in_strSource).Replace(&quot;{3}&quot;, in_strMessage)]" Cc="[in_mailCc]" DisplayName="Send SMTP Mail Message" Email="[usrname]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334.18867924528297,145.81132075471697" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Port="465" SecureConnection="Auto" SecurePassword="[pwd]" Server="smtp.gmail.com" Subject="[String.Format(&quot;{0}_{1}_Error Notification_{2}&quot;, in_PID,in_strBPName,in_Period.ToString(&quot;dd-MMM-yy&quot;))]" To="[in_mailTo]">
+        <ui:SendMail Bcc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[htmlBody.Replace(&quot;{0}&quot;, in_strBPName).Replace(&quot;{1}&quot;, DateTime.Now.ToString(&quot;dd-MM-yyyy HH:mm:ss&quot;)).Replace(&quot;{2}&quot;, in_strSource).Replace(&quot;{3}&quot;, in_strMessage)]" Cc="[in_mailCc]" DisplayName="Send SMTP Mail Message" Email="[usrname]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Port="465" SecureConnection="Auto" SecurePassword="[pwd]" Server="smtp.gmail.com" Subject="[String.Format(&quot;{0}_{1}_Error Notification_{2}&quot;, in_PID,in_strBPName,in_Period.ToString(&quot;dd-MMM-yy&quot;))]" To="[in_mailTo]">
           <ui:SendMail.Files>
             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
           </ui:SendMail.Files>
         </ui:SendMail>
       </If.Then>
       <If.Else>
-        <ui:SendMail Bcc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[htmlBody.Replace(&quot;{0}&quot;, in_strBPName).Replace(&quot;{1}&quot;, DateTime.Now.ToString(&quot;dd-MM-yyyy HH:mm:ss&quot;)).Replace(&quot;{2}&quot;, in_strSource).Replace(&quot;{3}&quot;, in_strMessage)]" Cc="[in_mailCc]" DisplayName="Send SMTP Mail Message SS" Email="[usrname]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334.18867924528297,145.81132075471697" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="True" Name="[in_SenderName]" Port="465" SecureConnection="Auto" SecurePassword="[pwd]" Server="smtp.gmail.com" Subject="[String.Format(&quot;{0}_{1}_Error Notification_{2}&quot;, in_PID,in_strBPName,in_Period.ToString(&quot;dd-MMM-yy&quot;))]" To="[in_mailTo]">
+        <ui:SendMail Bcc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[htmlBody.Replace(&quot;{0}&quot;, in_strBPName).Replace(&quot;{1}&quot;, DateTime.Now.ToString(&quot;dd-MM-yyyy HH:mm:ss&quot;)).Replace(&quot;{2}&quot;, in_strSource).Replace(&quot;{3}&quot;, in_strMessage)]" Cc="[in_mailCc]" DisplayName="Send SMTP Mail Message SS" Email="[usrname]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="True" Name="[in_SenderName]" Port="465" SecureConnection="Auto" SecurePassword="[pwd]" Server="smtp.gmail.com" Subject="[String.Format(&quot;{0}_{1}_Error Notification_{2}&quot;, in_PID,in_strBPName,in_Period.ToString(&quot;dd-MMM-yy&quot;))]" To="[in_mailTo]">
           <ui:SendMail.Files>
             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
               <InArgument x:TypeArguments="x:String">[in_pathSs]</InArgument>
@@ -170,13 +167,5 @@
         </ui:SendMail>
       </If.Else>
     </If>
-    <Sequence sap2010:Annotation.AnnotationText="This workflow will send email from unknown exception." sap:VirtualizedContainerService.HintSize="450.1132075471698,132.22641509433961" sap2010:WorkflowViewState.IdRef="Sequence_10">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </Sequence>
   </Sequence>
 </Activity>
