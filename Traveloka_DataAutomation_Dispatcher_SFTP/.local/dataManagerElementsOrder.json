@@ -37,14 +37,11 @@
       "Path": "Framework/Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "pathUserLog&Sequence_1",
+        "intIndex&Sequence_1",
         "period&Sequence_1",
         "pathLog&Sequence_1",
         "pathScheduler&Sequence_1",
         "dtUserConfig&Sequence_1",
-        "dt_MasterBp&Sequence_1",
-        "dt_UserLog&Sequence_1",
-        "currentDate&Sequence_1",
         "cellRerunFlag&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
@@ -67,6 +64,31 @@
         "in_ConfigFile",
         "in_ConfigSheets",
         "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Custom_Flow/Mail_Error.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "htmlBody&Sequence_9",
+        "pwd&Sequence_9",
+        "usrname&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strEmailTemplate",
+        "in_strProcessName",
+        "in_strSource",
+        "in_strMessage",
+        "in_mailTo",
+        "in_mailCc",
+        "in_credMail",
+        "in_pathSs",
+        "in_strBPName",
+        "in_PID",
+        "in_Period",
+        "in_SenderName"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

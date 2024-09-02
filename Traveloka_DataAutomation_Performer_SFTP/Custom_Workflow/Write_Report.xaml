@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1155,1009</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1233,880</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Write_Report_Workflow_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,32 +111,32 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Write_Report_Workflow" sap:VirtualizedContainerService.HintSize="540,944" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Write_Report_Workflow" sap:VirtualizedContainerService.HintSize="512,815" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;{0} - Start Write Report Workflow&quot; , in_str_PID)]" />
-    <ui:WriteCell Cell="[&quot;B&quot; + (in_dt_dateTime.Day + 1).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="478,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[in_dt_dateTime.ToString(&quot;MMMM&quot;)]" Text="[in_str_logCondition]" WorkbookPath="[in_str_logFilePath]" />
-    <If sap2010:Annotation.AnnotationText="Remove any log report on Upload Bucket Column in case of previously succeed run" Condition="[in_str_logCondition IsNot &quot;Success&quot;]" sap:VirtualizedContainerService.HintSize="478,545" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,124" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;{0} - Start Write Report Workflow&quot; , in_str_PID)]" />
+    <ui:WriteCell Cell="[&quot;B&quot; + (in_dt_dateTime.Day + 1).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="450,148" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[in_dt_dateTime.ToString(&quot;MMMM&quot;)]" Text="[in_str_logCondition]" WorkbookPath="[in_str_logFilePath]" />
+    <If sap2010:Annotation.AnnotationText="Remove any log report on Upload Bucket Column in case of previously succeed run" Condition="[in_str_logCondition IsNot &quot;Success&quot;]" sap:VirtualizedContainerService.HintSize="450,455" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="400,227" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WriteCell Cell="[&quot;C&quot; + (in_dt_dateTime.Day + 1).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="[in_dt_dateTime.ToString(&quot;MMMM&quot;)]" Text="[in_str_logCondition]" WorkbookPath="[in_str_logFilePath]" />
+          <ui:WriteCell Cell="[&quot;C&quot; + (in_dt_dateTime.Day + 1).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="354,139" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="[in_dt_dateTime.ToString(&quot;MMMM&quot;)]" Text="[in_str_logCondition]" WorkbookPath="[in_str_logFilePath]" />
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>

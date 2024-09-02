@@ -25,6 +25,7 @@
         "rawFolderExists&Sequence_15"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_keyFileName",
         "in_int_portNumber",
         "in_str_hostName",
         "in_str_localFolderPath",
@@ -87,6 +88,7 @@
       "Path": "Framework/Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "keyFileName&Sequence_3",
         "localPath&Sequence_3",
         "remotePath&Sequence_3",
         "finalRemotePath&Sequence_3",
@@ -98,6 +100,100 @@
       "ArgumentsSectionElementsOrder": [
         "in_TransactionItem",
         "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Custom_Workflow/Mail_Business_Error.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "htmlBody&Sequence_2",
+        "pwd&Sequence_2",
+        "usrname&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSource",
+        "in_strMessage",
+        "in_mailTo",
+        "in_mailCc",
+        "in_credMail",
+        "in_Period",
+        "in_PID",
+        "in_strEmailTemplate",
+        "in_datePeriod",
+        "in_pathLog",
+        "in_strBPName",
+        "in_SenderName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Custom_Workflow/Mail_RawFile.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "htmlBody&Sequence_1",
+        "usrname&Sequence_1",
+        "pwd&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Period",
+        "in_attachment",
+        "in_strEmailTemplate",
+        "in_CredentialEmail",
+        "in_MailTo",
+        "in_MailCC",
+        "in_PID",
+        "in_strBPName",
+        "in_SenderName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Custom_Workflow/Add_Queue_Retry.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strQueueReference&Sequence_1",
+        "intAutoRetryMax&Sequence_1",
+        "intRetried&Sequence_1",
+        "intAutoRetryPostpone&Sequence_1",
+        "isCreate&Sequence_1",
+        "isPostponeNextDay&Sequence_1",
+        "intAutoRetryMaxDay&Sequence_1",
+        "intAutoRetrySchedule&Sequence_1",
+        "bpKey&Sequence_1",
+        "excludedBps&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Custom_Workflow/Mail_System_Error.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "htmlBody&Sequence_9",
+        "pwd&Sequence_9",
+        "usrname&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strEmailTemplate",
+        "in_strSource",
+        "in_strMessage",
+        "in_mailTo",
+        "in_mailCc",
+        "in_credMail",
+        "in_pathSs",
+        "in_Period",
+        "in_PID",
+        "in_pathLog",
+        "in_strBPName",
+        "in_SenderName"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

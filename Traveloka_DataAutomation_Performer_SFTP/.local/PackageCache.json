@@ -3,7 +3,7 @@
     {
       "Package": {
         "Id": "UiPath.Excel.Activities",
-        "Version": "2.22.1-preview"
+        "Version": "2.16.2"
       },
       "Assemblies": [
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\closedxml\\0.95.4\\lib/netstandard2.0/ClosedXML.dll",
@@ -19,17 +19,17 @@
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Excel.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib/net6.0-windows7.0/Microsoft.Vbe.Interop.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib/net6.0-windows7.0/Office.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib/net6.0-windows7.0/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib/net6.0-windows7.0/UiPath.Excel.Activities.Package.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib/net6.0-windows7.0/UiPath.Excel.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib/net6.0-windows7.0/UiPath.Excel.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib/netstandard2.0/TelemetryClient.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib/net5.0-windows7.0/Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib/net5.0-windows7.0/Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib/net5.0-windows7.0/Office.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib/net5.0-windows7.0/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib/net5.0-windows7.0/UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib/net5.0-windows7.0/UiPath.Excel.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib/net5.0-windows7.0/UiPath.Excel.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.4.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2"
     },
     {
       "Package": {
@@ -49,7 +49,7 @@
     {
       "Package": {
         "Id": "UiPath.Mail.Activities",
-        "Version": "1.20.3"
+        "Version": "1.21.1"
       },
       "Assemblies": [
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
@@ -80,24 +80,25 @@
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.runtime.caching\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.connectionclient\\1.4.3-20221214.2\\lib/net5.0/ConnectionClient.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Interop.Domino.UiPath.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Office.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.Mail.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.Mail.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.MainSessionServer.Shared.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib/netstandard2.0/TelemetryClient.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.connectionclient\\1.4.6\\lib/net5.0/ConnectionClient.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib/net6.0-windows7.0/Interop.Domino.UiPath.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib/net6.0-windows7.0/Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib/net6.0-windows7.0/Office.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib/net6.0-windows7.0/UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib/net6.0-windows7.0/UiPath.Mail.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib/net6.0-windows7.0/UiPath.Mail.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib/net6.0-windows7.0/UiPath.MainSessionServer.Shared.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.4.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1"
     },
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "23.10.0-preview"
+        "Version": "22.10.4"
       },
       "Assemblies": [
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\csvhelper\\16.0.0\\lib/netstandard2.1/CsvHelper.dll",
@@ -112,9 +113,9 @@
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\3.1.6\\lib/netstandard2.1/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\3.1.6\\lib/netcoreapp3.1/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\3.1.6\\lib/netcoreapp3.1/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.8.0\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll",
@@ -125,8 +126,6 @@
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Options.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.Management.Infrastructure.CimCmdlets.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Diagnostics.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.powershell.commands.management\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Management.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Utility.dll",
@@ -135,14 +134,14 @@
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.powershell.markdownrender\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.MarkdownRender.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.powershell.sdk\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.SDK.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.powershell.security\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Security.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.wsman.management\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.WSMan.Management.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.wsman.runtime\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.WSMan.Runtime.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\namotion.reflection\\1.0.14\\lib/netstandard2.0/Namotion.Reflection.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\njsonschema\\10.2.2\\lib/netstandard2.0/NJsonSchema.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20230906.1\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20220715.4\\lib/net5.0-windows7.0/System.Activities.ViewModels.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.componentmodel.composition\\5.0.0\\lib/netcoreapp2.0/System.ComponentModel.Composition.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.componentmodel.composition.registration\\5.0.0\\lib/netstandard2.1/System.ComponentModel.Composition.Registration.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.data.odbc\\5.0.0\\runtimes/win/lib/netcoreapp2.0/System.Data.Odbc.dll",
@@ -167,85 +166,95 @@
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.servicemodel.security\\4.7.0\\lib/netstandard2.0/System.ServiceModel.Security.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.servicemodel.syndication\\5.0.0\\lib/netstandard2.0/System.ServiceModel.Syndication.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.serviceprocess.servicecontroller\\5.0.0\\runtimes/win/lib/netstandard2.0/System.ServiceProcess.ServiceController.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.codedworkflows\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities.runtime.windows\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities.runtime.windows\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities.runtime.windows\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib/netstandard2.0/TelemetryClient.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.4.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\22.10.4\\lib/net5.0-windows7.0/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\22.10.4\\lib/net5.0-windows7.0/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\22.10.4\\lib/net5.0-windows7.0/UiPath.System.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\23.10.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\22.10.4"
     },
     {
       "Package": {
         "Id": "UiPath.Testing.Activities",
-        "Version": "23.10.0-preview"
+        "Version": "22.10.3"
       },
       "Assemblies": [
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\automapper\\9.0.0\\lib/netstandard2.0/AutoMapper.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20230906.1\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.runtime.caching\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.codedworkflows\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib/netstandard2.0/TelemetryClient.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Api.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.RulesLibrary.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.4.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3\\lib/net5.0-windows7.0/UiPath.Testing.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3\\lib/net5.0-windows7.0/UiPath.Testing.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3\\lib/net5.0-windows7.0/UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3\\lib/net5.0-windows7.0/UiPath.Testing.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3"
     },
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities",
-        "Version": "23.10.0-preview"
+        "Version": "22.10.5"
       },
       "Assemblies": [
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\nlog\\4.5.11\\lib/netstandard2.0/NLog.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath\\23.10.66.33458-preview\\lib/net6.0-windows7.0/UiPath.Interop.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath\\22.10.52.8892\\lib/net6.0-windows7.0/UiPath.Interop.dll",
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.codedworkflows\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib/net6.0-windows7.0/UiPath.ImageProcessingInterop.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.17.0-preview\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.17.0-preview\\lib/net6.0-windows7.0/UiPath.OCR.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.17.0-preview\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.contracts\\2.15.0-preview\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib/netstandard2.0/TelemetryClient.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.Wizards.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.CV.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib/net6.0-windows7.0/UiPath.Vision.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.imageprocessing\\22.4.1\\lib/net5.0-windows7.0/UiPath.ImageProcessingInterop.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.11.0\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.11.0\\lib/net6.0-windows7.0/UiPath.OCR.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.11.0\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.contracts\\2.14.0\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.4.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.CV.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib/net6.0-windows7.0/UiPath.Wizards.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.11.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\bitmiracle.docotic.pdf\\8.6.13525-dev\\lib/netstandard2.0/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\lib/netstandard2.0/BitMiracle.LibTiff.NET.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\ntextcat\\0.3.65\\lib/netstandard2.0/NTextCat.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.18.0\\lib/net6.0/UiPath.DocumentProcessing.Contracts.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.documentunderstanding.digitizer\\2.6.1\\lib/net6.0/UiPath.DocumentUnderstanding.Digitizer.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.contracts\\2.14.0\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0\\lib/net6.0-windows7.0/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0\\lib/net6.0-windows7.0/UiPath.PDF.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0\\lib/net6.0-windows7.0/UiPath.PDF.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0\\lib/net6.0-windows7.0/UiPath.PDF.Telemetry.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0"
     }
   ],
   "Conflicts": [],
@@ -305,6 +314,16 @@
           "Item2": "[4.5.2, )"
         }
       ]
+    },
+    "BitMiracle.Docotic.Pdf": {
+      "Id": "BitMiracle.Docotic.Pdf",
+      "Version": "8.6.13525-dev",
+      "Dependencies": []
+    },
+    "BitMiracle.LibTiff.NET": {
+      "Id": "BitMiracle.LibTiff.NET",
+      "Version": "2.4.649",
+      "Dependencies": []
     },
     "ClosedXML": {
       "Id": "ClosedXML",
@@ -652,24 +671,24 @@
     },
     "Microsoft.CodeAnalysis.Analyzers": {
       "Id": "Microsoft.CodeAnalysis.Analyzers",
-      "Version": "3.3.3",
+      "Version": "3.0.0",
       "Dependencies": []
     },
     "Microsoft.CodeAnalysis.Common": {
       "Id": "Microsoft.CodeAnalysis.Common",
-      "Version": "4.5.0-2.22527.10",
+      "Version": "3.8.0",
       "Dependencies": [
         {
           "Item1": "Microsoft.CodeAnalysis.Analyzers",
-          "Item2": "[3.3.3, )"
+          "Item2": "[3.0.0, )"
         },
         {
           "Item1": "System.Collections.Immutable",
-          "Item2": "[6.0.0, )"
+          "Item2": "[5.0.0, )"
         },
         {
           "Item1": "System.Memory",
-          "Item2": "[4.5.5, )"
+          "Item2": "[4.5.4, )"
         },
         {
           "Item1": "System.Reflection.Metadata",
@@ -677,11 +696,11 @@
         },
         {
           "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[6.0.0, )"
+          "Item2": "[4.7.1, )"
         },
         {
           "Item1": "System.Text.Encoding.CodePages",
-          "Item2": "[6.0.0, )"
+          "Item2": "[4.5.1, )"
         },
         {
           "Item1": "System.Threading.Tasks.Extensions",
@@ -691,21 +710,21 @@
     },
     "Microsoft.CodeAnalysis.CSharp": {
       "Id": "Microsoft.CodeAnalysis.CSharp",
-      "Version": "4.5.0-2.22527.10",
+      "Version": "3.8.0",
       "Dependencies": [
         {
           "Item1": "Microsoft.CodeAnalysis.Common",
-          "Item2": "[4.5.0-2.22527.10, 4.5.0-2.22527.10]"
+          "Item2": "[3.8.0, 3.8.0]"
         }
       ]
     },
     "Microsoft.CodeAnalysis.VisualBasic": {
       "Id": "Microsoft.CodeAnalysis.VisualBasic",
-      "Version": "4.5.0-2.22527.10",
+      "Version": "3.8.0",
       "Dependencies": [
         {
           "Item1": "Microsoft.CodeAnalysis.Common",
-          "Item2": "[4.5.0-2.22527.10, 4.5.0-2.22527.10]"
+          "Item2": "[3.8.0, 3.8.0]"
         }
       ]
     },
@@ -1156,7 +1175,7 @@
     },
     "Microsoft.Rest.ClientRuntime": {
       "Id": "Microsoft.Rest.ClientRuntime",
-      "Version": "2.3.24",
+      "Version": "2.3.21",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
@@ -1463,11 +1482,6 @@
         }
       ]
     },
-    "MimeTypes": {
-      "Id": "MimeTypes",
-      "Version": "2.4.1",
-      "Dependencies": []
-    },
     "Namotion.Reflection": {
       "Id": "Namotion.Reflection",
       "Version": "1.0.14",
@@ -1705,6 +1719,11 @@
           "Item2": "[1.8.9, )"
         }
       ]
+    },
+    "NTextCat": {
+      "Id": "NTextCat",
+      "Version": "0.3.65",
+      "Dependencies": []
     },
     "Polly": {
       "Id": "Polly",
@@ -1966,7 +1985,7 @@
     },
     "System.Activities.ViewModels": {
       "Id": "System.Activities.ViewModels",
-      "Version": "1.0.0-20230906.1",
+      "Version": "1.0.0-20220715.4",
       "Dependencies": []
     },
     "System.AppContext": {
@@ -2055,13 +2074,8 @@
     },
     "System.Collections.Immutable": {
       "Id": "System.Collections.Immutable",
-      "Version": "6.0.0",
-      "Dependencies": [
-        {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[6.0.0, )"
-        }
-      ]
+      "Version": "5.0.0",
+      "Dependencies": []
     },
     "System.ComponentModel.Annotations": {
       "Id": "System.ComponentModel.Annotations",
@@ -2362,6 +2376,20 @@
         {
           "Item1": "Microsoft.Win32.SystemEvents",
           "Item2": "[5.0.0, )"
+        }
+      ]
+    },
+    "System.Drawing.Primitives": {
+      "Id": "System.Drawing.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
         }
       ]
     },
@@ -2884,7 +2912,7 @@
     },
     "System.Memory": {
       "Id": "System.Memory",
-      "Version": "4.5.5",
+      "Version": "4.5.4",
       "Dependencies": []
     },
     "System.Memory.Data": {
@@ -3341,7 +3369,7 @@
     },
     "System.Runtime.CompilerServices.Unsafe": {
       "Id": "System.Runtime.CompilerServices.Unsafe",
-      "Version": "6.0.0",
+      "Version": "5.0.0",
       "Dependencies": []
     },
     "System.Runtime.Extensions": {
@@ -4055,11 +4083,11 @@
     },
     "System.Text.Encoding.CodePages": {
       "Id": "System.Text.Encoding.CodePages",
-      "Version": "6.0.0",
+      "Version": "5.0.0",
       "Dependencies": [
         {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[6.0.0, )"
+          "Item1": "Microsoft.NETCore.Platforms",
+          "Item2": "[5.0.0, )"
         }
       ]
     },
@@ -4321,7 +4349,7 @@
     },
     "UiPath": {
       "Id": "UiPath",
-      "Version": "23.10.66.33458-preview",
+      "Version": "22.10.52.8892",
       "Dependencies": []
     },
     "UiPath.Activities.RuntimeGovernance": {
@@ -4334,27 +4362,9 @@
         }
       ]
     },
-    "UiPath.CodedWorkflows": {
-      "Id": "UiPath.CodedWorkflows",
-      "Version": "23.10.0-preview",
-      "Dependencies": [
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[13.0.1, )"
-        },
-        {
-          "Item1": "System.IO.Abstractions",
-          "Item2": "[3.0.10, )"
-        },
-        {
-          "Item1": "System.ValueTuple",
-          "Item2": "[4.5.0, )"
-        }
-      ]
-    },
     "UiPath.ConnectionClient": {
       "Id": "UiPath.ConnectionClient",
-      "Version": "1.4.3-20221214.2",
+      "Version": "1.4.6",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
@@ -4370,9 +4380,53 @@
         }
       ]
     },
+    "UiPath.DocumentProcessing.Contracts": {
+      "Id": "UiPath.DocumentProcessing.Contracts",
+      "Version": "1.18.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.1, )"
+        }
+      ]
+    },
+    "UiPath.DocumentUnderstanding.Digitizer": {
+      "Id": "UiPath.DocumentUnderstanding.Digitizer",
+      "Version": "2.6.1",
+      "Dependencies": [
+        {
+          "Item1": "BitMiracle.Docotic.Pdf",
+          "Item2": "[8.6.13525-dev, )"
+        },
+        {
+          "Item1": "System.Drawing.Common",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "System.Drawing.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[1.5.0, )"
+        },
+        {
+          "Item1": "NTextCat",
+          "Item2": "[0.3.65, )"
+        },
+        {
+          "Item1": "BitMiracle.LibTiff.NET",
+          "Item2": "[2.4.649, )"
+        },
+        {
+          "Item1": "UiPath.DocumentProcessing.Contracts",
+          "Item2": "[1.18.0, )"
+        }
+      ]
+    },
     "UiPath.Excel.Activities": {
       "Id": "UiPath.Excel.Activities",
-      "Version": "2.22.1-preview",
+      "Version": "2.16.2",
       "Dependencies": [
         {
           "Item1": "ClosedXML",
@@ -4400,15 +4454,15 @@
         },
         {
           "Item1": "System.Text.Encoding.CodePages",
-          "Item2": "[6.0.0, )"
+          "Item2": "[4.5.1, )"
         },
         {
           "Item1": "UiPath.Platform",
-          "Item2": "[23.4.1, )"
+          "Item2": "[22.4.0, )"
         },
         {
           "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[1.6.69, )"
+          "Item2": "[1.5.3, )"
         }
       ]
     },
@@ -4428,12 +4482,12 @@
     },
     "UiPath.ImageProcessing": {
       "Id": "UiPath.ImageProcessing",
-      "Version": "23.4.0",
+      "Version": "22.4.1",
       "Dependencies": []
     },
     "UiPath.Mail.Activities": {
       "Id": "UiPath.Mail.Activities",
-      "Version": "1.20.3",
+      "Version": "1.21.1",
       "Dependencies": [
         {
           "Item1": "Google.Apis.Calendar.v3",
@@ -4501,7 +4555,7 @@
         },
         {
           "Item1": "UiPath.ConnectionClient",
-          "Item2": "[1.4.3-20221214.2, )"
+          "Item2": "[1.4.6, )"
         },
         {
           "Item1": "UiPath.Platform",
@@ -4515,15 +4569,11 @@
     },
     "UiPath.OCR.Activities": {
       "Id": "UiPath.OCR.Activities",
-      "Version": "3.17.0-preview",
+      "Version": "3.11.0",
       "Dependencies": [
         {
           "Item1": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
           "Item2": "[7.0.1, )"
-        },
-        {
-          "Item1": "Microsoft.Rest.ClientRuntime",
-          "Item2": "[2.3.24, )"
         },
         {
           "Item1": "Newtonsoft.Json",
@@ -4539,11 +4589,15 @@
         },
         {
           "Item1": "System.Collections.Immutable",
-          "Item2": "[6.0.0, )"
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.Configuration.ConfigurationManager",
+          "Item2": "[5.0.0, )"
         },
         {
           "Item1": "System.Drawing.Common",
-          "Item2": "[5.0.3, )"
+          "Item2": "[5.0.2, )"
         },
         {
           "Item1": "System.ValueTuple",
@@ -4551,27 +4605,61 @@
         },
         {
           "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.15.0-preview, )"
+          "Item2": "[2.13.0, )"
         },
         {
           "Item1": "UiPath.Platform",
-          "Item2": "[23.4.0, )"
+          "Item2": "[22.10.2, )"
         }
       ]
     },
     "UiPath.OCR.Contracts": {
       "Id": "UiPath.OCR.Contracts",
-      "Version": "2.15.0-preview",
+      "Version": "2.14.0",
       "Dependencies": [
         {
           "Item1": "System.Drawing.Common",
-          "Item2": "[5.0.3, )"
+          "Item2": "[5.0.2, )"
+        }
+      ]
+    },
+    "UiPath.PDF.Activities": {
+      "Id": "UiPath.PDF.Activities",
+      "Version": "3.11.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.1, )"
+        },
+        {
+          "Item1": "System.IO.Abstractions",
+          "Item2": "[3.0.10, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Dataflow",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "UiPath.DocumentUnderstanding.Digitizer",
+          "Item2": "[2.6.1, )"
+        },
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.14.0, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.5.3, )"
         }
       ]
     },
     "UiPath.Platform": {
       "Id": "UiPath.Platform",
-      "Version": "23.8.0-alpha.4168429",
+      "Version": "23.4.1",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
@@ -4589,81 +4677,7 @@
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
-      "Version": "23.10.0-preview",
-      "Dependencies": [
-        {
-          "Item1": "UiPath.System.Activities.Runtime.Windows",
-          "Item2": "[23.10.0-preview, )"
-        },
-        {
-          "Item1": "CsvHelper",
-          "Item2": "[16.0.0, )"
-        },
-        {
-          "Item1": "Microsoft.AspNet.SignalR.Client",
-          "Item2": "[2.4.0, )"
-        },
-        {
-          "Item1": "Microsoft.AspNetCore.SignalR.Client",
-          "Item2": "[3.1.6, )"
-        },
-        {
-          "Item1": "Microsoft.CSharp",
-          "Item2": "[4.7.0, )"
-        },
-        {
-          "Item1": "Microsoft.CodeAnalysis.CSharp",
-          "Item2": "[4.5.0-2.22527.10, )"
-        },
-        {
-          "Item1": "Microsoft.CodeAnalysis.Common",
-          "Item2": "[4.5.0-2.22527.10, )"
-        },
-        {
-          "Item1": "Microsoft.CodeAnalysis.VisualBasic",
-          "Item2": "[4.5.0-2.22527.10, )"
-        },
-        {
-          "Item1": "Microsoft.Rest.ClientRuntime",
-          "Item2": "[2.3.21, )"
-        },
-        {
-          "Item1": "Microsoft.VisualBasic",
-          "Item2": "[10.3.0, )"
-        },
-        {
-          "Item1": "MimeTypes",
-          "Item2": "[2.4.1, )"
-        },
-        {
-          "Item1": "SharpZipLib",
-          "Item2": "[1.3.3, )"
-        },
-        {
-          "Item1": "System.Activities.ViewModels",
-          "Item2": "[1.0.0-20230906.1, )"
-        },
-        {
-          "Item1": "System.Management.Automation",
-          "Item2": "[7.1.0, )"
-        },
-        {
-          "Item1": "UiPath.CodedWorkflows",
-          "Item2": "[23.10.0-preview, )"
-        },
-        {
-          "Item1": "UiPath.Platform",
-          "Item2": "[23.8.0-alpha.4168429, )"
-        },
-        {
-          "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[1.6.69, )"
-        }
-      ]
-    },
-    "UiPath.System.Activities.Runtime.Windows": {
-      "Id": "UiPath.System.Activities.Runtime.Windows",
-      "Version": "23.10.0-preview",
+      "Version": "22.10.4",
       "Dependencies": [
         {
           "Item1": "CsvHelper",
@@ -4683,15 +4697,15 @@
         },
         {
           "Item1": "Microsoft.CodeAnalysis.CSharp",
-          "Item2": "[4.5.0-2.22527.10, )"
+          "Item2": "[3.8.0, )"
         },
         {
           "Item1": "Microsoft.CodeAnalysis.Common",
-          "Item2": "[4.5.0-2.22527.10, )"
+          "Item2": "[3.8.0, )"
         },
         {
           "Item1": "Microsoft.CodeAnalysis.VisualBasic",
-          "Item2": "[4.5.0-2.22527.10, )"
+          "Item2": "[3.8.0, )"
         },
         {
           "Item1": "Microsoft.PowerShell.SDK",
@@ -4706,34 +4720,30 @@
           "Item2": "[10.3.0, )"
         },
         {
-          "Item1": "MimeTypes",
-          "Item2": "[2.4.1, )"
-        },
-        {
           "Item1": "SharpZipLib",
           "Item2": "[1.3.3, )"
+        },
+        {
+          "Item1": "System.Activities.ViewModels",
+          "Item2": "[1.0.0-20220715.4, )"
         },
         {
           "Item1": "System.Management.Automation",
           "Item2": "[7.1.0, )"
         },
         {
-          "Item1": "UiPath.CodedWorkflows",
-          "Item2": "[23.10.0-preview, )"
-        },
-        {
           "Item1": "UiPath.Platform",
-          "Item2": "[23.8.0-alpha.4168429, )"
+          "Item2": "[22.10.2, )"
         },
         {
           "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[1.6.69, )"
+          "Item2": "[1.5.3, )"
         }
       ]
     },
     "UiPath.Telemetry.Client": {
       "Id": "UiPath.Telemetry.Client",
-      "Version": "1.6.69",
+      "Version": "1.5.3",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
@@ -4751,7 +4761,7 @@
     },
     "UiPath.Testing.Activities": {
       "Id": "UiPath.Testing.Activities",
-      "Version": "23.10.0-preview",
+      "Version": "22.10.3",
       "Dependencies": [
         {
           "Item1": "AutoMapper",
@@ -4766,10 +4776,6 @@
           "Item2": "[13.0.1, )"
         },
         {
-          "Item1": "System.Activities.ViewModels",
-          "Item2": "[1.0.0-20230906.1, )"
-        },
-        {
           "Item1": "System.IO.Abstractions",
           "Item2": "[3.0.10, )"
         },
@@ -4782,12 +4788,8 @@
           "Item2": "[4.5.4, )"
         },
         {
-          "Item1": "UiPath.CodedWorkflows",
-          "Item2": "[23.10.0-preview, )"
-        },
-        {
           "Item1": "UiPath.Platform",
-          "Item2": "[23.4.0, )"
+          "Item2": "[22.10.2, )"
         },
         {
           "Item1": "UiPath.Telemetry.Client",
@@ -4797,41 +4799,27 @@
     },
     "UiPath.UIAutomation.Activities": {
       "Id": "UiPath.UIAutomation.Activities",
-      "Version": "23.10.0-preview",
-      "Dependencies": [
-        {
-          "Item1": "UiPath.UIAutomation.Activities.Runtime",
-          "Item2": "[23.10.0-preview, 23.10.0-preview]"
-        }
-      ]
-    },
-    "UiPath.UIAutomation.Activities.Runtime": {
-      "Id": "UiPath.UIAutomation.Activities.Runtime",
-      "Version": "23.10.0-preview",
+      "Version": "22.10.5",
       "Dependencies": [
         {
           "Item1": "UiPath",
-          "Item2": "[23.10.66.33458-preview, 23.10.66.33458-preview]"
-        },
-        {
-          "Item1": "UiPath.CodedWorkflows",
-          "Item2": "[23.10.0-preview, )"
+          "Item2": "[22.10.52.8892, 22.10.52.8892]"
         },
         {
           "Item1": "UiPath.Vision",
-          "Item2": "[3.11.0-preview, )"
+          "Item2": "[3.6.0, )"
         },
         {
           "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.15.0-preview, )"
+          "Item2": "[2.13.0, )"
         },
         {
           "Item1": "UiPath.OCR.Activities",
-          "Item2": "[3.17.0-preview, )"
+          "Item2": "[3.11.0, )"
         },
         {
           "Item1": "UiPath.Platform",
-          "Item2": "[23.4.1, )"
+          "Item2": "[22.10.2, )"
         },
         {
           "Item1": "Newtonsoft.Json",
@@ -4843,7 +4831,7 @@
         },
         {
           "Item1": "UiPath.ImageProcessing",
-          "Item2": "[23.4.0, )"
+          "Item2": "[22.4.1, )"
         },
         {
           "Item1": "UiPath.Telemetry.Client",
@@ -4857,11 +4845,11 @@
     },
     "UiPath.Vision": {
       "Id": "UiPath.Vision",
-      "Version": "3.11.0-preview",
+      "Version": "3.6.0",
       "Dependencies": [
         {
           "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.15.0-preview, )"
+          "Item2": "[2.13.0, )"
         }
       ]
     }
@@ -4886,6 +4874,26 @@
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\azure.core\\1.18.0\\lib\\net5.0\\Azure.Core.dll"
       ],
       "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\azure.core\\1.18.0"
+    },
+    {
+      "Package": {
+        "Id": "BitMiracle.Docotic.Pdf",
+        "Version": "8.6.13525-dev"
+      },
+      "Assemblies": [
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\bitmiracle.docotic.pdf\\8.6.13525-dev\\lib\\netstandard2.0\\BitMiracle.Docotic.Pdf.dll"
+      ],
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\bitmiracle.docotic.pdf\\8.6.13525-dev"
+    },
+    {
+      "Package": {
+        "Id": "BitMiracle.LibTiff.NET",
+        "Version": "2.4.649"
+      },
+      "Assemblies": [
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\lib\\netstandard2.0\\BitMiracle.LibTiff.NET.dll"
+      ],
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649"
     },
     {
       "Package": {
@@ -5151,40 +5159,40 @@
     {
       "Package": {
         "Id": "Microsoft.CodeAnalysis.Analyzers",
-        "Version": "3.3.3"
+        "Version": "3.0.0"
       },
       "Assemblies": [],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0"
     },
     {
       "Package": {
         "Id": "Microsoft.CodeAnalysis.Common",
-        "Version": "4.5.0-2.22527.10"
+        "Version": "3.8.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib\\netcoreapp3.1\\Microsoft.CodeAnalysis.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0\\lib\\netcoreapp3.1\\Microsoft.CodeAnalysis.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0"
     },
     {
       "Package": {
         "Id": "Microsoft.CodeAnalysis.CSharp",
-        "Version": "4.5.0-2.22527.10"
+        "Version": "3.8.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib\\netcoreapp3.1\\Microsoft.CodeAnalysis.CSharp.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0\\lib\\netcoreapp3.1\\Microsoft.CodeAnalysis.CSharp.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0"
     },
     {
       "Package": {
         "Id": "Microsoft.CodeAnalysis.VisualBasic",
-        "Version": "4.5.0-2.22527.10"
+        "Version": "3.8.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10\\lib\\netcoreapp3.1\\Microsoft.CodeAnalysis.VisualBasic.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.8.0\\lib\\netcoreapp3.1\\Microsoft.CodeAnalysis.VisualBasic.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.8.0"
     },
     {
       "Package": {
@@ -5409,10 +5417,7 @@
         "Id": "Microsoft.Management.Infrastructure.Runtime.Win",
         "Version": "2.0.0"
       },
-      "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.Native.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.dll"
-      ],
+      "Assemblies": [],
       "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0"
     },
     {
@@ -5534,12 +5539,12 @@
     {
       "Package": {
         "Id": "Microsoft.Rest.ClientRuntime",
-        "Version": "2.3.24"
+        "Version": "2.3.21"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib\\netstandard2.0\\Microsoft.Rest.ClientRuntime.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib\\netstandard2.0\\Microsoft.Rest.ClientRuntime.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21"
     },
     {
       "Package": {
@@ -5649,14 +5654,6 @@
     },
     {
       "Package": {
-        "Id": "MimeTypes",
-        "Version": "2.4.1"
-      },
-      "Assemblies": [],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\mimetypes\\2.4.1"
-    },
-    {
-      "Package": {
         "Id": "Namotion.Reflection",
         "Version": "1.0.14"
       },
@@ -5715,6 +5712,16 @@
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.dll"
       ],
       "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\npoi\\2.5.5"
+    },
+    {
+      "Package": {
+        "Id": "NTextCat",
+        "Version": "0.3.65"
+      },
+      "Assemblies": [
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\ntextcat\\0.3.65\\lib\\netstandard2.0\\NTextCat.dll"
+      ],
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\ntextcat\\0.3.65"
     },
     {
       "Package": {
@@ -6188,24 +6195,6 @@
     },
     {
       "Package": {
-        "Id": "runtime.win7-x64.runtime.native.System.IO.Compression",
-        "Version": "4.3.0"
-      },
-      "Assemblies": [],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.0"
-    },
-    {
-      "Package": {
-        "Id": "runtime.win7.System.Private.Uri",
-        "Version": "4.3.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtimes\\win\\lib\\netstandard1.0\\System.Private.Uri.dll"
-      ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0"
-    },
-    {
-      "Package": {
         "Id": "SharpZipLib",
         "Version": "1.3.3"
       },
@@ -6237,12 +6226,12 @@
     {
       "Package": {
         "Id": "System.Activities.ViewModels",
-        "Version": "1.0.0-20230906.1"
+        "Version": "1.0.0-20220715.4"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20230906.1\\lib\\net6.0-windows7.0\\System.Activities.ViewModels.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20220715.4\\lib\\net5.0-windows7.0\\System.Activities.ViewModels.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20230906.1"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20220715.4"
     },
     {
       "Package": {
@@ -6295,12 +6284,12 @@
     {
       "Package": {
         "Id": "System.Collections.Immutable",
-        "Version": "6.0.0"
+        "Version": "5.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.collections.immutable\\6.0.0\\lib\\net6.0\\System.Collections.Immutable.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib\\netstandard2.0\\System.Collections.Immutable.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.collections.immutable\\6.0.0"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.collections.immutable\\5.0.0"
     },
     {
       "Package": {
@@ -6483,6 +6472,16 @@
         "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.drawing.common\\5.0.3\\runtimes\\win\\lib\\netcoreapp3.0\\System.Drawing.Common.dll"
       ],
       "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.drawing.common\\5.0.3"
+    },
+    {
+      "Package": {
+        "Id": "System.Drawing.Primitives",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\lib\\netstandard1.1\\System.Drawing.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.drawing.primitives\\4.3.0"
     },
     {
       "Package": {
@@ -6679,12 +6678,12 @@
     {
       "Package": {
         "Id": "System.Memory",
-        "Version": "4.5.5"
+        "Version": "4.5.4"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.memory\\4.5.5\\lib\\netcoreapp2.1\\_._"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.memory\\4.5.4\\lib\\netcoreapp2.1\\_._"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.memory\\4.5.5"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.memory\\4.5.4"
     },
     {
       "Package": {
@@ -6903,12 +6902,12 @@
     {
       "Package": {
         "Id": "System.Runtime.CompilerServices.Unsafe",
-        "Version": "6.0.0"
+        "Version": "5.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\lib\\net6.0\\System.Runtime.CompilerServices.Unsafe.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\lib\\netcoreapp2.0\\System.Runtime.CompilerServices.Unsafe.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0"
     },
     {
       "Package": {
@@ -7186,12 +7185,12 @@
     {
       "Package": {
         "Id": "System.Text.Encoding.CodePages",
-        "Version": "6.0.0"
+        "Version": "5.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Text.Encoding.CodePages.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\runtimes\\win\\lib\\netcoreapp2.0\\System.Text.Encoding.CodePages.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0"
     },
     {
       "Package": {
@@ -7350,12 +7349,12 @@
     {
       "Package": {
         "Id": "UiPath",
-        "Version": "23.10.66.33458-preview"
+        "Version": "22.10.52.8892"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath\\23.10.66.33458-preview\\lib\\net6.0-windows7.0\\UiPath.Interop.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath\\22.10.52.8892\\lib\\net6.0-windows7.0\\UiPath.Interop.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath\\23.10.66.33458-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath\\22.10.52.8892"
     },
     {
       "Package": {
@@ -7369,39 +7368,49 @@
     },
     {
       "Package": {
-        "Id": "UiPath.CodedWorkflows",
-        "Version": "23.10.0-preview"
+        "Id": "UiPath.ConnectionClient",
+        "Version": "1.4.6"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.codedworkflows\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.CodedWorkflows.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.connectionclient\\1.4.6\\lib\\net5.0\\ConnectionClient.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.codedworkflows\\23.10.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.connectionclient\\1.4.6"
     },
     {
       "Package": {
-        "Id": "UiPath.ConnectionClient",
-        "Version": "1.4.3-20221214.2"
+        "Id": "UiPath.DocumentProcessing.Contracts",
+        "Version": "1.18.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.connectionclient\\1.4.3-20221214.2\\lib\\net5.0\\ConnectionClient.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.18.0\\lib\\net6.0\\UiPath.DocumentProcessing.Contracts.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.connectionclient\\1.4.3-20221214.2"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.18.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.DocumentUnderstanding.Digitizer",
+        "Version": "2.6.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.documentunderstanding.digitizer\\2.6.1\\lib\\net6.0\\UiPath.DocumentUnderstanding.Digitizer.dll"
+      ],
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.documentunderstanding.digitizer\\2.6.1"
     },
     {
       "Package": {
         "Id": "UiPath.Excel.Activities",
-        "Version": "2.22.1-preview"
+        "Version": "2.16.2"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Excel.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib\\net6.0-windows7.0\\Microsoft.Vbe.Interop.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib\\net6.0-windows7.0\\Office.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.Package.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib\\net5.0-windows7.0\\Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib\\net5.0-windows7.0\\Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib\\net5.0-windows7.0\\Office.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2\\lib\\net5.0-windows7.0\\UiPath.Excel.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.excel.activities\\2.16.2"
     },
     {
       "Package": {
@@ -7418,155 +7427,143 @@
     {
       "Package": {
         "Id": "UiPath.ImageProcessing",
-        "Version": "23.4.0"
+        "Version": "22.4.1"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib\\net6.0-windows7.0\\UiPath.ImageProcessingInterop.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.imageprocessing\\22.4.1\\lib\\net5.0-windows7.0\\UiPath.ImageProcessingInterop.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.imageprocessing\\23.4.0"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.imageprocessing\\22.4.1"
     },
     {
       "Package": {
         "Id": "UiPath.Mail.Activities",
-        "Version": "1.20.3"
+        "Version": "1.21.1"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib\\net6.0-windows7.0\\Interop.Domino.UiPath.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Outlook.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Word.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib\\net6.0-windows7.0\\Office.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib\\net6.0-windows7.0\\UiPath.Mail.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib\\net6.0-windows7.0\\UiPath.MainSessionServer.Shared.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib\\net6.0-windows7.0\\Interop.Domino.UiPath.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib\\net6.0-windows7.0\\Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib\\net6.0-windows7.0\\Office.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib\\net6.0-windows7.0\\UiPath.Mail.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1\\lib\\net6.0-windows7.0\\UiPath.MainSessionServer.Shared.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.20.3"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.mail.activities\\1.21.1"
     },
     {
       "Package": {
         "Id": "UiPath.OCR.Activities",
-        "Version": "3.17.0-preview"
+        "Version": "3.11.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.17.0-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.17.0-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.17.0-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Core.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.11.0\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.11.0\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.11.0\\lib\\net6.0-windows7.0\\UiPath.OCR.Core.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.17.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.activities\\3.11.0"
     },
     {
       "Package": {
         "Id": "UiPath.OCR.Contracts",
-        "Version": "2.15.0-preview"
+        "Version": "2.14.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.contracts\\2.15.0-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Contracts.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.contracts\\2.14.0\\lib\\net6.0-windows7.0\\UiPath.OCR.Contracts.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.contracts\\2.15.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.ocr.contracts\\2.14.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.11.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0\\lib\\net6.0-windows7.0\\UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0\\lib\\net6.0-windows7.0\\UiPath.PDF.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0\\lib\\net6.0-windows7.0\\UiPath.PDF.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0\\lib\\net6.0-windows7.0\\UiPath.PDF.Telemetry.dll"
+      ],
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.pdf.activities\\3.11.0"
     },
     {
       "Package": {
         "Id": "UiPath.Platform",
-        "Version": "23.8.0-alpha.4168429"
+        "Version": "23.4.1"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\lib\\net6.0-windows7.0\\UiPath.Platform.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.4.1\\lib\\net6.0-windows7.0\\UiPath.Platform.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.platform\\23.4.1"
     },
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "23.10.0-preview"
+        "Version": "22.10.4"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.System.Activities.ViewModels.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\22.10.4\\lib\\net5.0-windows7.0\\UiPath.OrchestratorClient.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\22.10.4\\lib\\net5.0-windows7.0\\UiPath.System.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\22.10.4\\lib\\net5.0-windows7.0\\UiPath.System.Activities.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\23.10.0-preview"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.System.Activities.Runtime.Windows",
-        "Version": "23.10.0-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities.runtime.windows\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.OrchestratorClient.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities.runtime.windows\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Api.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities.runtime.windows\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.System.Activities.dll"
-      ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities.runtime.windows\\23.10.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.system.activities\\22.10.4"
     },
     {
       "Package": {
         "Id": "UiPath.Telemetry.Client",
-        "Version": "1.6.69"
+        "Version": "1.5.3"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib\\netstandard2.0\\TelemetryClient.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib\\netstandard2.0\\TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.6.69"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.telemetry.client\\1.5.3"
     },
     {
       "Package": {
         "Id": "UiPath.Testing.Activities",
-        "Version": "23.10.0-preview"
+        "Version": "22.10.3"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.Api.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.RulesLibrary.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3\\lib\\net5.0-windows7.0\\UiPath.Testing.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3\\lib\\net5.0-windows7.0\\UiPath.Testing.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3\\lib\\net5.0-windows7.0\\UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3\\lib\\net5.0-windows7.0\\UiPath.Testing.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\23.10.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.testing.activities\\22.10.3"
     },
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities",
-        "Version": "23.10.0-preview"
+        "Version": "22.10.5"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.Wizards.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\lib\\net6.0-windows7.0\\UiPath.Wizards.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.0-preview"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.UIAutomation.Activities.Runtime",
-        "Version": "23.10.0-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll"
-      ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5"
     },
     {
       "Package": {
         "Id": "UiPath.Vision",
-        "Version": "3.11.0-preview"
+        "Version": "3.6.0"
       },
       "Assemblies": [
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
       ],
-      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.11.0-preview"
+      "Path": "C:\\Users\\John Suryajaya\\.nuget\\packages\\uipath.vision\\3.6.0"
     }
   ]
 }

@@ -7,6 +7,7 @@
     "UiPath.Excel.Activities": "[2.16.2]",
     "UiPath.FTP.Activities": "[2.2.0]",
     "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.PDF.Activities": "[3.11.0]",
     "UiPath.System.Activities": "[22.10.4]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]"
